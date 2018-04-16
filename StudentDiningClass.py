@@ -1,3 +1,6 @@
+# Author: Henry Roberts
+# 4/16/2018
+
 class studentDining(object):
 	# A Student at JMU who has punches, dining, and FLEX in an account.
 
@@ -96,9 +99,6 @@ class studentDining(object):
 		return self.name
 
 
-
-print 'Hello, World!'
-
 # Created a student called Orlando
 orlando = studentDining('Orlando', 14, 14, 250, 50)
 
@@ -108,18 +108,22 @@ for x in range(0, 6):
 		orlando.withdraw_dining(10)
 		orlando.withdraw_flex(4)
 
+# Tests Depositing
 orlando.deposit_flex(35)
 orlando.deposit_dining(70)
 
-
+# Checks getters and if the amounts have changed
 print 'Amounts'
 orlando.get_punch()
 orlando.get_dining()
 orlando.get_flex()
 
+# Tests setting over max punches,
+# print statement is so able to track in console
 print 'Setting punches over max'
 orlando.set_punch_balance(500)
 orlando.get_punch()
 
+# Prints students name
 print 'Students Name'
 orlando.get_name()
